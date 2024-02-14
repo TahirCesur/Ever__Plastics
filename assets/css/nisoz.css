@@ -953,7 +953,7 @@
 
 @media (max-width: 767px) {
   .blog-one {
-    padding: 80px 0 50px;
+    padding: 60px 0;
   }
 }
 
@@ -2317,10 +2317,12 @@
   --nisoz-color2-rgb: 100, 100, 102;
   --nisoz-color3: #f2f2f6;
   --nisoz-color3-rgb: 242, 242, 246;
-  --nisoz-base: #f9d71c;
+  --nisoz-base: #34b1e2;
   /*--nisoz-base: #f9d71c;*/
   --nisoz-base-rgb: 182, 239, 0;
-  --nisoz-black: #161617;
+  --nisoz-black: #020024;
+  --nisoz-green: #9cc26f;
+  --nisoz-black: #020024;
   --nisoz-black-rgb: 22, 22, 23;
   --nisoz-black2: #171717;
   --nisoz-black2-rgb: 23, 23, 23;
@@ -2439,8 +2441,8 @@ h6 {
   -webkit-appearance: none;
   border: none;
   outline: none !important;
-  background-color: var(--nisoz-base);
-  color: var(--nisoz-black);
+  background-color: var(--nisoz-black);
+  color: var(--nisoz-green);
   font-size: 16px;
   font-weight: 700;
   font-family: var(--heading-font);
@@ -2461,7 +2463,7 @@ h6 {
 
 .nisoz-btn__text {
   position: relative;
-  font-size: 21px;
+  font-size: 15px;
   z-index: 2;
 }
 
@@ -2470,7 +2472,8 @@ h6 {
   position: absolute;
   width: 25%;
   height: 100%;
-  background: var(--nisoz-black);
+  background: var(--nisoz-base);
+  color: var(--nisoz-black);
   transform: translateY(150%);
   border-radius: 50%;
   left: calc((var(--b) - 1) * 25%);
@@ -2496,7 +2499,7 @@ h6 {
 }
 
 .nisoz-btn:hover {
-  color: var(--nisoz-white);
+  color: var(--nisoz-black);
 }
 
 .nisoz-btn:hover .nisoz-btn__shape {
@@ -2690,7 +2693,7 @@ h6 {
   text-align: center;
   line-height: 50px;
   font-size: 17px;
-  color: var(--nisoz-base);
+  color: var(--nisoz-green);
   left: 0;
   top: 0;
   height: 100%;
@@ -2703,7 +2706,7 @@ h6 {
 }
 
 .scroll-top__circle path {
-  stroke: var(--nisoz-base);
+  stroke: var(--nisoz-green);
   stroke-width: 4;
   fill: none;
   box-sizing: border-box;
@@ -2732,7 +2735,7 @@ h6 {
 .whatsapp-button i {
   font-size: 20px;
   color: var(
-    --nisoz-base
+    --nisoz-green
   ); /* İkon rengini değiştirmek isterseniz burayı düzenleyin */
 }
 
@@ -2750,7 +2753,7 @@ h6 {
 .whatsapp-button__circle path {
   fill: none;
   stroke: var(
-    --nisoz-base
+    --nisoz-green
   ); /* Çerçeve rengini değiştirmek isterseniz burayı düzenleyin */
   stroke-width: 4;
 }
@@ -2909,7 +2912,7 @@ h6 {
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 1.8px;
-  color: var(--nisoz-color);
+  color: var(--nisoz-green);
   font-weight: 400;
   margin: 0 0 6px;
   position: relative;
@@ -2919,7 +2922,7 @@ h6 {
   font-size: 50px;
   text-transform: uppercase;
   font-weight: 500;
-  color: var(--nisoz-black2);
+  color: var(--nisoz-black);
   margin: 0;
 }
 
@@ -3040,17 +3043,17 @@ h6 {
   position: relative;
   top: 1px;
   display: inline-block;
-  color: var(--nisoz-base);
+  color: var(--nisoz-black);
   font-size: 14px;
   margin-right: 7px;
 }
 
 .topbar__list li a {
-  color: inherit;
+  color: var(--nisoz-black);
 }
 
 .topbar__list li a:hover {
-  color: var(--nisoz-base);
+  color: var(--nisoz-green);
 }
 
 .topbar__list li + li {
@@ -3146,7 +3149,7 @@ h6 {
   background-color: RGBA(var(--nisoz-white-rgb));
   position: absolute;
   left: 0;
-  top: 44px;
+/*   top: 44px; */
   width: 100%;
   z-index: 91;
   padding: 0 68px;
@@ -3161,18 +3164,40 @@ h6 {
 @media (max-width: 1199px) {
   .main-menu {
     padding: 0;
+    top: 0;
   }
 }
 
 @media (max-width: 991px) {
   .main-menu {
-    top: 0;
+    padding: 0 12px;
+    top: -44px;
+  }
+}
+
+@media (max-width: 780px) {
+  .main-menu {
+    padding: 0 12px;
+    top: -44px;
+  }
+}
+@media (max-width: 576px) {
+  .main-menu {
+    padding: 0 12px;
+    top: -44px;
+  }
+}
+@media (max-width: 480px) {
+  .main-menu {
+    padding: 0 12px;
+    top: -44px;
   }
 }
 
 @media (min-width: 991px) and (max-width: 1360px) {
   .main-menu {
     padding: 0 12px;
+    top: 0;
   }
 }
 
@@ -3275,7 +3300,7 @@ h6 {
   display: flex;
   align-items: center;
   font-family: var(--heading-font);
-  color: var(--nisoz-black) !important;
+  color: var(--nisoz-black);
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -3342,7 +3367,7 @@ h6 {
 .stricky-header .main-menu__list li ul li > a {
   font-size: 16px;
   line-height: 26px;
-  color: var(--nisoz-color);
+  color: var(--nisoz-black);
   font-weight: 500;
   font-family: var(--heading-font);
   text-transform: uppercase;
@@ -3365,7 +3390,7 @@ h6 {
   font-weight: 700;
   font-family: "Font Awesome 5 Free";
   content: "\f0da";
-  color: var(--nisoz-base);
+  color: var(--nisoz-green);
   visibility: hidden;
   opacity: 0;
   transition: all 500ms ease;
@@ -3377,7 +3402,7 @@ h6 {
 .stricky-header .main-menu__list li ul li.current > a,
 .stricky-header .main-menu__list li ul li:hover > a {
   background-color: var(--nisoz-black);
-  color: var(--nisoz-white);
+  color: var(--nisoz-green);
 }
 
 .main-menu .main-menu__list li ul li.current > a::after,
@@ -3468,15 +3493,20 @@ h6 {
   border-radius: 50%;
   display: inline-block;
   text-align: center;
-  color: var(--nisoz-base);
+  color: var(--nisoz-green);
   font-size: 22px;
   line-height: 50px;
   margin-right: 5px;
   margin-left: 5px;
+  font-style: normal;
+}
+.main-menu__phone i:hover {
+  background-color: var(--nisoz-base);
+  color: var(--nisoz-black);
 }
 
 .main-menu__phone:hover {
-  color: var(--nisoz-base);
+  color: var(--nisoz-black);
 }
 
 .main-menu__search,
@@ -4283,7 +4313,7 @@ body.megamenu-popup-active .mobile-nav__content {
 # Mobile Nav
 --------------------------------------------------------------*/
 .mobile-nav__wrapper {
-  position: fixed!important;
+  position: fixed !important;
   top: 0;
   left: 0;
   width: 100vw;
@@ -6011,7 +6041,7 @@ body.locked .page-wrapper {
   justify-content: center;
   background-color: var(--nisoz-black);
   border-radius: 50%;
-  color: var(--nisoz-base);
+  color: var(--nisoz-green);
   font-size: 26px;
 }
 
@@ -6802,7 +6832,7 @@ body.locked .page-wrapper {
 
 .service-one__item {
   position: relative;
-  background-color: var(--nisoz-black);
+  background-color: var(--nisoz-base);
   box-shadow: 0px 10px 60px 0px rgba(var(--nisoz-black4-rgb), 0.07);
   counter-increment: count;
   margin-bottom: 30px;
@@ -6901,7 +6931,7 @@ body.locked .page-wrapper {
   line-height: 1;
   position: relative;
   z-index: 3;
-  color: var(--nisoz-base);
+  color: var(--nisoz-black);
   display: inline-block;
   margin: 0 0 30px;
   transition: 500ms ease;
@@ -6916,7 +6946,7 @@ body.locked .page-wrapper {
 }
 
 .service-one__item:hover .service-one__item__icon {
-  color: var(--nisoz-base);
+  color: var(--nisoz-white);
 }
 
 .service-one__item:hover .service-one__item__icon span {
@@ -7487,7 +7517,7 @@ body.locked .page-wrapper {
 }
 
 .cta-two .section-title__title {
-  color: var(--nisoz-black4);
+  color: var(--nisoz-black);
 }
 
 @media (max-width: 991px) {
@@ -7506,7 +7536,7 @@ body.locked .page-wrapper {
   height: 256px;
   background-color: transparent;
   font-size: 85px;
-  color: var(--nisoz-base);
+  color: var(--nisoz-green);
   display: flex;
   align-items: end;
   justify-content: flex-end;
@@ -7546,7 +7576,7 @@ body.locked .page-wrapper {
 }
 
 .cta-two__icon:hover {
-  color: var(--nisoz-white);
+  color: var(--nisoz-base);
 }
 
 .cta-two__info-bottom {
@@ -7557,14 +7587,14 @@ body.locked .page-wrapper {
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 1.6px;
-  color: var(--nisoz-color2);
+  color: var(--nisoz-green);
   margin: 0;
   margin-bottom: -50px;
   z-index: 2;
 }
 
 .cta-two__info-bottom a {
-  color: var(--nisoz-white);
+  color: var(--nisoz-green);
 }
 
 .cta-two__info-bottom a:hover {
@@ -9682,7 +9712,7 @@ body.locked .page-wrapper {
 # Footer
 --------------------------------------------------------------*/
 .main-footer {
-  background-color: var(--nisoz-black);
+  background-color: var(--nisoz-base);
   position: relative;
   padding: 50px 0 68px;
 }
@@ -9707,7 +9737,7 @@ body.locked .page-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid RGBA(var(--nisoz-white-rgb), 0.1);
+  border-bottom: 1px solid RGBA(var(--nisoz-white-rgb), 0.9);
   padding-bottom: 50px;
   margin-bottom: 67px;
 }
@@ -9727,8 +9757,8 @@ body.locked .page-wrapper {
   display: inline-block;
   width: 55px;
   height: 55px;
-  background-color: var(--nisoz-black5);
-  color: var(--nisoz-white);
+  background-color: var(--nisoz-black);
+  color: var(--nisoz-green);
   line-height: 55px;
   border-radius: 50%;
   font-size: 20px;
@@ -9745,6 +9775,7 @@ body.locked .page-wrapper {
 .main-footer__social a:hover {
   background-color: var(--nisoz-base);
   color: var(--nisoz-black);
+  border: 1px solid var(--nisoz-black);
 }
 
 .main-footer__navmenu {
@@ -9766,7 +9797,7 @@ body.locked .page-wrapper {
   list-style: none;
   display: block;
   line-height: 36px;
-  color: var(--nisoz-color2);
+  color: var(--nisoz-black);
   text-transform: capitalize;
 }
 
@@ -9776,7 +9807,7 @@ body.locked .page-wrapper {
 }
 
 .main-footer__navmenu ul li a:hover {
-  color: var(--nisoz-base);
+  color: var(--nisoz-white);
   padding-left: 5px;
 }
 
@@ -9791,7 +9822,7 @@ body.locked .page-wrapper {
 }
 
 .main-footer__about__text {
-  color: var(--nisoz-color2);
+  color: var(--nisoz-black);
   line-height: 26px;
   margin: 10px 0 9px;
 }
@@ -9812,7 +9843,7 @@ body.locked .page-wrapper {
 
 .main-footer__about__info li span {
   font-size: 16px;
-  color: var(--nisoz-base);
+  color: var(--nisoz-black);
   display: inline-block;
   margin-right: 14px;
 }
@@ -9822,7 +9853,7 @@ body.locked .page-wrapper {
 }
 
 .main-footer__about__info li a:hover {
-  color: var(--nisoz-base);
+  color: var(--nisoz-black);
 }
 
 .main-footer__newsletter {
@@ -9880,12 +9911,12 @@ body.locked .page-wrapper {
 /*-- Copyright --*/
 .copyright {
   position: relative;
-  background-color: var(--nisoz-black5);
+  background-color: var(--nisoz-black);
   padding: 28px 0 30px;
 }
 
 .copyright__text {
-  color: var(--nisoz-color2);
+  color: var(--nisoz-green);
   margin: 0;
 }
 
@@ -10710,7 +10741,7 @@ body.locked .page-wrapper {
 
 @media (max-width: 767px) {
   .contact-page {
-    padding: 80px 0;
+    padding: 60px 0;
   }
 }
 
@@ -10761,7 +10792,7 @@ body.boxed-wrapper .main-menu__phone {
 # Page Header
 --------------------------------------------------------------*/
 .page-header {
-  background-color: var(--nisoz-black);
+  background-color: var(--nisoz-base);
   position: relative;
 }
 
@@ -10775,12 +10806,17 @@ body.boxed-wrapper .main-menu__phone {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: left bottom;
-  background-image: url(../images/shapes/page-header-bg-1-1.png);
+  background-image: url(../images/shapes/page.png);
+}
+@media (min-width: 1200px) and (max-width: 2140px) {
+  .page-header__bg {
+    background-size: cover;
+    background-position: right bottom;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
   .page-header__bg {
-    left: -15%;
     background-size: cover;
     background-position: right bottom;
   }
@@ -10788,7 +10824,6 @@ body.boxed-wrapper .main-menu__phone {
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .page-header__bg {
-    left: -15%;
     background-size: cover;
     background-position: right bottom;
   }
@@ -13038,7 +13073,7 @@ body.boxed-wrapper .main-menu__phone {
   justify-content: center;
   align-items: center;
   font-size: 12px;
-  color: var(--nisoz-base);
+  color: var(--nisoz-green);
   letter-spacing: 4.5px;
   margin-bottom: 4px;
 }
@@ -13073,12 +13108,13 @@ body.boxed-wrapper .main-menu__phone {
   background-color: var(--nisoz-black);
   font-size: 12px;
   letter-spacing: 1.2px;
-  color: var(--nisoz-white);
+  color: var(--nisoz-green);
   padding: 3px 20px;
 }
 
 .product__item .nisoz-btn:hover {
   color: var(--nisoz-black);
+  background-color: var(--nisoz-black);
 }
 
 .product__item .nisoz-btn .nisoz-btn__shape {
@@ -13172,7 +13208,7 @@ body.boxed-wrapper .main-menu__phone {
   align-items: center;
   letter-spacing: 3px;
   font-size: 16px;
-  color: var(--nisoz-base);
+  color: var(--nisoz-green);
 }
 
 .product-details__review a {
@@ -13337,11 +13373,11 @@ body.boxed-wrapper .main-menu__phone {
 
 .product-details__socials a {
   display: inline-block;
-  background-color: var(--nisoz-color3);
+  background-color: var(--nisoz-black);
   width: 55px;
   height: 55px;
   line-height: 55px;
-  color: var(--nisoz-black);
+  color: var(--nisoz-green);
   font-size: 20px;
   border-radius: 50%;
   text-align: center;
@@ -13349,6 +13385,7 @@ body.boxed-wrapper .main-menu__phone {
 
 .product-details__socials a:hover {
   background-color: var(--nisoz-base);
+  color: var(--nisoz-black);
 }
 
 .product-details__socials a + a {
@@ -13394,7 +13431,7 @@ body.boxed-wrapper .main-menu__phone {
   display: inline-block;
   font-size: 20px;
   line-height: 30px;
-  color: var(--nisoz-base);
+  color: var(--nisoz-green);
 }
 
 .product-details__comment {
@@ -14275,7 +14312,7 @@ body.boxed-wrapper .main-menu__phone {
   }
 }
 
-@media (max-width:780px) {
+@media (max-width: 780px) {
   .resimSlider {
     height: 400px;
     background-color: #f2f2f2 !important;
@@ -14329,7 +14366,7 @@ body.boxed-wrapper .main-menu__phone {
   text-decoration: none;
   color: #fff; /* Metin rengi beyaz */
   font-weight: bold;
-  background-color: #f9d21c;; /* Arka plan rengi koyu gri */
+  background-color: #34b1e2; /* Arka plan rengi koyu gri */
   padding: 5px 10px; /* Buton boyutları */
   border-radius: 5px;
   transition: background-color 0.3s ease, color 0.3s ease; /* Animasyon efekti */
@@ -14337,7 +14374,7 @@ body.boxed-wrapper .main-menu__phone {
 
 .language-option:hover {
   background-color: #333; /* Arka plan rengi dil seçeneği üzerine gelince sarı */
-  color: #f9d21c; /* Metin rengi koyu gri */
+  color: #34b1e2; /* Metin rengi koyu gri */
 }
 
 /* Tel Modu İçin */
@@ -14349,7 +14386,7 @@ body.boxed-wrapper .main-menu__phone {
 
 @media (max-width: 768px) {
   .topbar {
-    display: block; 
+    display: block;
   }
 }
 
@@ -14371,7 +14408,6 @@ body.boxed-wrapper .main-menu__phone {
   }
 }
 
-
 @media (max-width: 992px) {
   .main-menu .container-fluid {
     display: flex;
@@ -14382,5 +14418,7 @@ body.boxed-wrapper .main-menu__phone {
     padding-left: 40px;
     padding-right: 40px;
     margin-top: 50px;
+  }
 }
-}
+
+
