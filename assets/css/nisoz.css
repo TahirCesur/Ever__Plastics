@@ -2338,7 +2338,7 @@
 }
 
 body {
-  font-family: var(--nisoz-font);
+  /* font-family: var(--heading-font); */
   color: var(--nisoz-color);
   font-size: 15px;
   line-height: 30px;
@@ -2548,7 +2548,7 @@ h6 {
 .block-title__decor {
   width: 21px;
   height: 14px;
-  background-image: url(../images/shapes/leaf-1-1.png);
+  background-image: url(../images/shapes/leaf-1-1.webp);
   background-repeat: no-repeat;
   background-position: top center;
   display: inline-block;
@@ -4372,7 +4372,7 @@ body.megamenu-popup-active .mobile-nav__content {
   bottom: 0;
   background-color: var(--nisoz-black);
   opacity: 0.3;
-  cursor: url(../images/close.png), auto;
+  cursor: url(../images/close.webp), auto;
 }
 
 .mobile-nav__content {
@@ -4593,7 +4593,7 @@ body.megamenu-popup-active .mobile-nav__content {
   -webkit-transition-delay: 0.3s;
   background-color: var(--nisoz-black4);
   opacity: 0.8;
-  cursor: url(../images/close.png), auto;
+  cursor: url(../images/close.webp), auto;
 }
 
 .search-popup__content {
@@ -10806,7 +10806,7 @@ body.boxed-wrapper .main-menu__phone {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: left bottom;
-  background-image: url(../images/shapes/page.png);
+  background-image: url(../images/shapes/page.webp);
 }
 @media (min-width: 1200px) and (max-width: 2140px) {
   .page-header__bg {
@@ -10839,7 +10839,7 @@ body.boxed-wrapper .main-menu__phone {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: left top;
-  background-image: url(../images/shapes/page-header-bg-shape-113.png);
+  background-image: url(../images/shapes/page-header-bg-shape-113.webp);
   -webkit-animation: movebounce3 2s linear infinite;
   animation: movebounce3 2s linear infinite;
 }
@@ -10905,7 +10905,7 @@ body.boxed-wrapper .main-menu__phone {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: top center;
-  background-image: url(../images/shapes/page-header-bg-1-4.png);
+  background-image: url(../images/shapes/page-header-bg-1-4.webp);
   -webkit-animation: movebounce2 2s linear infinite;
   animation: movebounce2 2s linear infinite;
 }
@@ -10943,7 +10943,7 @@ body.boxed-wrapper .main-menu__phone {
 
 @media (max-width: 767px) {
   .page-header .container {
-    padding-top: 180px;
+    padding-top: 280px;
   }
 }
 
@@ -13079,7 +13079,7 @@ body.boxed-wrapper .main-menu__phone {
 }
 
 .product__item__title {
-  font-size: 20px;
+  font-size: 24px;
   line-height: 26px;
   text-transform: uppercase;
   margin-bottom: 2px;
@@ -13394,12 +13394,17 @@ body.boxed-wrapper .main-menu__phone {
 
 .product-details__description {
   position: relative;
-  margin: 52px 0 0;
+  margin: 52px 8px 5px;
 }
 
 .product-details__description__title {
   font-size: 30px;
   text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.product-details__description__titles {
+  font-size: 30px;
   margin-bottom: 24px;
 }
 
@@ -14299,7 +14304,7 @@ body.boxed-wrapper .main-menu__phone {
 }
 
 .resimSlider {
-  height: 500px;
+  height: 510px;
   background-color: #f2f2f2 !important;
   margin-top: 100px;
 }
