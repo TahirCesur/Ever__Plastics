@@ -5554,9 +5554,13 @@ fieldset:disabled .btn {
 }
 .carousel-control-prev {
   left: 0;
+  top: 60%;
+  transform: translateY(-50%);
 }
 .carousel-control-next {
   right: 0;
+   top: 60%;
+   transform: translateY(-50%);
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
