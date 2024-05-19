@@ -1,0 +1,16 @@
+User-agent: *
+Disallow: /en/aski-gecmeli---aski-sedefli-torba-3BAE6
+Disallow: /en/kraft-aluminyum-kilitli-doypack-ambalaj-4C76F
+Disallow: /en/ekmek-ambalajlari-B49D7
+Disallow: /en/kasik-ve-durum-kagidi-DD01B
+Disallow: /iletisim
+Disallow: /kategori-adi-2-5225B
+Disallow: /pvc-ambalajlar-E7725
+Disallow: /kese-kagidi-8DDE8
+Disallow: /kategori-adi-3-0C694
+Disallow: /teklif-formu
+Disallow: /ekmek-ambalajlari-B49D7
+Disallow: /pvc-asetat-kutular-0E6E9
+Disallow: /seffaf-kilitli-doypock-ambalaj-D3D93
+
+Sitemap: https://www.bkbambalaj.com/sitemap.xml
