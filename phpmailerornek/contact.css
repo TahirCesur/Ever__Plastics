@@ -1,0 +1,37 @@
+
+/* form handling */
+
+label{
+float: left;
+width: 100px;
+}
+
+
+input:focus, textarea:focus{
+background-color: lightyellow;
+}
+
+select, input,textarea{
+width: 250px;
+margin-bottom: 5px;
+}
+
+
+.boxes{
+width: 1em;
+}
+
+#resetbutton{
+margin-left: 100px;
+margin-top: 5px;
+width: 90px;
+}
+#submitbutton{
+margin-left: 90px;
+margin-top: 5px;
+width: 90px;
+}
+
+br{
+clear: left;
+}

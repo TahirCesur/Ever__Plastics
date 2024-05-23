@@ -279,37 +279,37 @@
       </div>
 
       <div class="contact-one__form-box container-md mt-40">
-        <form action="assets/inc/sendemail .php" class="contact-one__form contact-form-validated"
-          novalidate="novalidate" method="post">
+        <form action="" method="post" role="form" class="contact-one__form contact-form-validated"
+          onsubmit="return sendMail()">
           <div class="row">
             <div class="col-md-6">
               <div class="contact-one__input-box">
-                <input type="text" placeholder="Adınız" name="name" />
+                <input type="text" placeholder="Adınız" name="name" id="name" required />
               </div>
             </div>
             <div class="col-md-6">
               <div class="contact-one__input-box">
-                <input type="email" placeholder="Email" name="email" />
+                <input type="email" placeholder="Email" name="email" id="email" required />
               </div>
             </div>
             <div class="col-md-6">
               <div class="contact-one__input-box">
-                <input type="text" placeholder="Gsm" name="phone" />
+                <input type="text" placeholder="Gsm" name="phone" id="phone" required />
               </div>
             </div>
             <div class="col-md-6">
               <div class="contact-one__input-box">
                 <div class="contact-one__input-box">
-                  <input type="text" placeholder="Konu" name="subject" />
+                  <input type="text" placeholder="Konu" name="subject" id="subject" required />
                 </div>
               </div>
             </div>
             <div class="col-md-12">
               <div class="contact-one__input-box text-message-box">
-                <textarea name="message" placeholder="Mesajınız"></textarea>
+                <textarea placeholder="Mesajınız" name="message" id="message" required></textarea>
               </div>
               <div class="contact-one__btn-box">
-                <button type="submit" class="nisoz-btn">
+                <button type="submit" id="button" class="nisoz-btn">
                   <span class="nisoz-btn__shape"></span><span class="nisoz-btn__shape"></span><span
                     class="nisoz-btn__shape"></span><span class="nisoz-btn__shape"></span>
                   <span class="nisoz-btn__text">Gönder</span>
@@ -318,6 +318,52 @@
             </div>
           </div>
         </form>
+
+        <!-- Email JS -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript">
+          (function() {
+            emailjs.init("uVt1xweRhMwtTNk5O");
+          })();
+
+          function sendMail() {
+            // Form verilerini topla
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var subject = document.getElementById('subject').value;
+            var message = document.getElementById('message').value;
+            // Form verilerinin boş olup olmadığını kontrol et
+            if (!name || !email || !phone || !subject || !message) {
+              alert('Lütfen tüm alanları doldurun!');
+              return false;
+            }
+            // EmailJS kullanarak e-posta gönder
+            emailjs.send("service_1n43b8w", "template_nmhz7gp", {
+              name: name,
+              email: email,
+              phone: phone,
+              subject: subject,
+              message: message
+            }).then(function(response) {
+              console.log('E-posta gönderildi', response);
+              alert('E-posta başarıyla gönderildi!');
+              // E-posta başarıyla gönderildikten sonra yapılacak işlemleri buraya yazabilirsiniz
+              // Formu temizle
+              document.getElementById('name').value = '';
+              document.getElementById('email').value = '';
+              document.getElementById('phone').value = '';
+              document.getElementById('subject').value = '';
+              document.getElementById('message').value = '';
+            }, function(error) {
+              console.log('E-posta gönderilirken hata oluştu', error);
+              alert('E-posta gönderilirken bir hata oluştu. Lütfen tekrar deneyin.');
+              // Hata durumunda yapılacak işlemleri buraya yazabilirsiniz
+            });
+            // Formun otomatik olarak gönderilmesini engellemek için
+            return false;
+          }
+        </script>
       </div>
 
       <div class="container-md mt-4">
@@ -414,7 +460,8 @@
                 <span class="fas fa-phone-square"></span><a href="tel:+2242116266">(0212) 639 2616</a>
               </li>
               <li>
-                <span class="fas fa-envelope"></span><a href="mailto:info@Everplasticssolarlight.com">info@everplastics.com</a>
+                <span class="fas fa-envelope"></span><a
+                  href="mailto:info@Everplasticssolarlight.com">info@everplastics.com</a>
               </li>
             </ul>
           </div>

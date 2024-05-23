@@ -2,7 +2,7 @@
 
 // Define some constants
 define("RECIPIENT_NAME", "Ever Plastics");
-define("RECIPIENT_EMAIL", "info@bkbambalaj.com");
+define("RECIPIENT_EMAIL", "info@everplastics.com");
 
 // Read the form values
 $name = isset($_POST['name']) ? htmlspecialchars(trim($_POST['name'])) : "";
